@@ -1,3 +1,20 @@
+/* Class Selector*/
+
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / .1);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+
+}
 nav {
     background-color: darkblue;
     padding: 10px;
@@ -31,9 +48,7 @@ main{
 
 aside {
     width: 20rem;
-    margin: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.2); /*1️⃣*/
-    padding: 1rem;
     background-color: #eee;
     color: #333;
     text-align: center;
@@ -44,7 +59,14 @@ aside img {
     height: auto;
 }
 
+aside h2{
+    position: absolute;
+    top: 47px;
+    left: 150px;
+}
+
 main img {
+    float: right;
     width: 150px;
     height: auto;
 }
