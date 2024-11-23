@@ -1,0 +1,132 @@
+:root {
+  --primary-color: #FFD700; /* Yellow */
+  --secondary-color: #00a2ff; /* Blue */
+  --accent1-color: #fd7302; /* Orange */
+  --accent2-color: #030303; /* Black */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: "Kanit", serif;
+  color: var(--accent2-color);
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+header img {
+  width: 300px;
+  height: auto;
+  margin-right: 20px;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+header nav a {
+  width: 100%;
+  background-color: var(--primary-color);
+  color: var(--accent2-color);
+  padding: 10px;
+  border: 1px solid var(--accent2-color);
+  text-align: center;
+  text-decoration: none;
+}
+
+h1 {
+  color: var(--accent2-color);
+  font-family: "Archivo Black", serif;
+  font-weight: 400;
+  font-size: 36px;
+  border: #030303;
+}
+
+h2 {
+  color: var(--secondary-color);
+  font-family: "Archivo Black", serif;
+  font-weight: 400;
+  font-size: 36px;
+}
+
+h3 {
+  color: var(--secondary-color);
+  font-family: "Archivo Black", serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+p {
+  font-weight: 300;
+  padding: 10px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+div.hero {
+  position: relative;
+  background-image: url("/wwrimages/rafting.16.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+article img {
+  width: 40%;
+  height: auto;
+  margin: 10px;
+}
+
+article p {
+  width: 55%;
+  margin: 10px;
+}
+
+footer {
+  background-color: var(--accent2-color);
+  color: var(--primary-color);
+  padding: 20px;
+  text-align: center;
+  clear: both;
+}
+
+footer .sociallinks a {
+  margin: 10px;
+}
+
+footer .sociallinks img {
+  width: 24px;
+  height: auto;
+}
+
+
+
+
