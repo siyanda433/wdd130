@@ -20,28 +20,49 @@ body {
 }
 
 header {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
   align-items: center;
+  background-color: #ffffff;
+  color: #fdf901;
   padding: 20px;
   justify-content: space-between;
 }
 
 header img {
+  grid-column: 1;
   width: 300px;
-  height: auto;
+  height: 300px;
   margin-right: 20px;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 header nav {
   display: flex;
   justify-content: space-between;
   width: 80%;
+  grid-column: 2;
 }
+
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header nav li {
+  margin-right: 20px;
+}
+
 
 header nav a {
   width: 100%;
   background-color: var(--primary-color);
-  color: var(--accent2-color);
+  color: #fff;
   padding: 10px;
   border: 1px solid var(--accent2-color);
   text-align: center;
@@ -100,30 +121,93 @@ article {
 }
 
 article img {
+  right: auto;
   width: 40%;
   height: auto;
   margin: 10px;
 }
 
 article p {
+  left: auto;
   width: 55%;
   margin: 10px;
 }
+
+#history {
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+#history h2 {
+  margin-top: 0;
+}
+
+#history p {
+  margin-bottom: 20px;
+  width: 45%;
+margin: 10px;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}  
+
+#history img {
+  width: 10%;
+  margin: 10px;
+}
+
+#history-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  }
+  
+
+#adventures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  }
+  
+  #adventures figure {
+  margin: 10px;
+  width: calc(20% - 20px);
+  }
+  
+  #adventures img {
+  width: 100%;
+  height: auto;
+  }
+  
+  #adventures figcaption {
+  font-size: 16px;
+  color: #666;
+  padding: 10px;
+  text-align: center;
+  }
 
 footer {
   background-color: var(--accent2-color);
   color: var(--primary-color);
   padding: 20px;
-  text-align: center;
-  clear: both;
+  text-align: right;
+}
+
+footer.social-media {
+  display: flex;
+  justify-content: flex-end;
 }
 
 footer .sociallinks a {
-  margin: 10px;
+  margin-left: 20px;
 }
 
 footer .sociallinks img {
-  width: 24px;
+  width: 30px;
   height: auto;
 }
 
